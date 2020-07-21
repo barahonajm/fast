@@ -173,7 +173,9 @@ export class Carousel extends Tabs {
     // (undocumented)
     autoplayInterval: number;
     // (undocumented)
-    basicpattern: boolean;
+    basicContentRef: HTMLDivElement;
+    // (undocumented)
+    basicPattern: boolean;
     // (undocumented)
     carousel: HTMLDivElement;
     // (undocumented)
@@ -210,7 +212,11 @@ export class Carousel extends Tabs {
     // (undocumented)
     rotationControl: HTMLElement;
     // (undocumented)
+    rotationControlItem: HTMLElement[];
+    // (undocumented)
     setComponent(): void;
+    // (undocumented)
+    tabPanelsRef: HTMLElement;
     // (undocumented)
     tabsRef: HTMLElement;
     }
@@ -766,9 +772,6 @@ export class Tab extends FASTElement {
 // @public
 export class TabPanel extends FASTElement {
 }
-
-// @public
-export const tabPanelPrefix: string;
 
 // @public
 export const TabPanelTemplate: import("@microsoft/fast-element").ViewTemplate<TabPanel, any>;
