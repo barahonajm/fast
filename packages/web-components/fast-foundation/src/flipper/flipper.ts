@@ -1,4 +1,6 @@
 import { attr, booleanConverter, FASTElement } from "@microsoft/fast-element";
+import { applyMixins } from "../utilities";
+import { ARIAGlobalStatesAndProperties } from "../patterns";
 
 /**
  * The direction options for flipper.
@@ -46,3 +48,5 @@ export class Flipper extends FASTElement {
     @attr
     public direction: FlipperDirection = FlipperDirection.next;
 }
+export interface Flipper extends ARIAGlobalStatesAndProperties {}
+applyMixins(Flipper, ARIAGlobalStatesAndProperties);

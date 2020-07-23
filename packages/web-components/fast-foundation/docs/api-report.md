@@ -221,6 +221,10 @@ export class Carousel extends Tabs {
     tabsRef: HTMLElement;
     }
 
+// @public (undocumented)
+export interface Carousel extends ARIAGlobalStatesAndProperties {
+}
+
 // @public
 export const CarouselTemplate: ViewTemplate<Carousel, any>;
 
@@ -419,6 +423,10 @@ export class Flipper extends FASTElement {
     direction: FlipperDirection;
     disabled: boolean;
     hiddenFromAT: boolean;
+}
+
+// @public (undocumented)
+export interface Flipper extends ARIAGlobalStatesAndProperties {
 }
 
 // @public
