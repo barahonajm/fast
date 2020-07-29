@@ -12,7 +12,6 @@ import { BaseProgress } from '@microsoft/fast-foundation';
 import { Button } from '@microsoft/fast-foundation';
 import { Card } from '@microsoft/fast-foundation';
 import { Carousel } from '@microsoft/fast-foundation';
-import { CarouselTestSlide } from '@microsoft/fast-foundation';
 import { Checkbox } from '@microsoft/fast-foundation';
 import { ColorRGBA64 } from '@microsoft/fast-colors';
 import { DesignSystemProvider } from '@microsoft/fast-foundation';
@@ -267,10 +266,6 @@ export class FASTCard extends Card {
 
 // @public (undocumented)
 export class FASTCarousel extends Carousel {
-}
-
-// @public (undocumented)
-export class FASTCarouselTestSlide extends CarouselTestSlide {
 }
 
 // @public
